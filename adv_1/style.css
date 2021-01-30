@@ -1,3 +1,10 @@
 h1{
     font-style: italic;
 }
+h2{
+    font-family: monospace;
+    color: crimson;
+}
+h3{
+    font-weight: bolder;
+}
