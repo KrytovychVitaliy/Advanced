@@ -1,0 +1,192 @@
+h2{
+    @include f_montserrat_bold(26px, 32px);
+    color: $color_gray_4;
+    margin-bottom: 35px;
+    text-align: center;
+}
+h3{
+    @include f_montserrat_bold(24px, 26px);
+    margin: 25px 0 20px;
+}
+h4{
+    @include f_montserrat_bolder(22px, 27px);
+    color: $colorBase;
+}
+h5{
+    @include f_montserrat_bold(14px, 17px);
+    color: $color_gray_4;
+    margin-top: 17px;
+}
+.photos-3{
+    margin-top: 95px;
+    section{
+        div{
+            width: 300px;
+            height: 400px;
+            padding: 0 25px 21px 25px;
+            margin: 0 10px;
+            color: $color_white_sp;
+            background-position: bottom;
+            &:nth-child(1){background-image: url(../images/3_photos/1.svg);};
+            &:nth-child(2){background-image: url(../images/3_photos/2.svg);};
+            &:nth-child(3){background-image: url(../images/3_photos/3.svg);};
+            button{
+                @include red_button(40px);
+                @include f_montserrat_normal(10px, 12px);
+                padding: 4px 14px;
+                width: 70px;
+            };
+            p{@include f_roboto_300(14px, 14px);}
+        }
+    }
+};
+.avatar{
+    margin: 0 auto;
+    margin-top: 97px;
+    text-align: center;
+    h2{margin-bottom: 0px;}
+    figure{
+        max-width: 221px;
+        position: relative;
+        margin-right: 19px;
+        margin-top: 35px;
+        img{border-radius: 50%;};
+        h5::before{
+            display: block;
+            font-family: "Font Awesome 5 Free";
+            color: $colorBase;
+            font-size: 14px;
+            line-height: 32px;
+            text-align: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            position: absolute;
+            left: 138.5px;
+            top: 88px;
+            box-shadow: 0 0 0 4px $colorBase;
+        };
+        &:nth-child(1){
+            h5::before{
+                content: "\f001";
+                background: #FF4E50;
+            }
+        };
+        &:nth-child(2){
+            h5::before{
+                content: "\f1fc";
+                background: #19D4CA;
+            }
+        };
+        &:nth-child(3){
+            h5::before{
+                content: "\f030";
+                background: #FFA710;
+            }
+        };
+        &:nth-child(4){
+            margin-right: 0;
+            h5::before{
+                content: "\f072";
+                transform: rotate(-30deg);
+                background: #667DF3;
+            }
+        };
+        figcaption p{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 14px;
+            color: $color_gray_6;
+            margin-top: 12px;
+        };
+    };
+    button{
+        @include red_button(40px);
+        background: $colorBase;
+        color: $color_bg_base;
+        margin-top: 36px;
+    }
+}
+.photos-7{
+    margin: 0 auto;
+    margin-top: 93px;
+    .photos-7-size-mini{
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 300px;
+        height: 310px;
+        background-size: auto 310px;
+    }
+    .photos-7-size-long{
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 620px;
+        height: 310px;
+        background-size: auto 310px;
+    }
+    .photos-7__photo{
+        >div:nth-child(1){
+            >div:nth-child(1){
+                background-image: url(../images/7_photos/mini_mask.png), url(../images/7_photos/1.svg);
+                @include br_mr(4px);
+            }
+            >div:nth-child(2){
+                background-image: url(../images/7_photos/mini_mask.png), url(../images/7_photos/2.jpg);
+                @include br_mr(4px);
+            }
+            >div:nth-child(3){
+                background-image: url(../images/7_photos/mini_mask.png), url(../images/7_photos/3.svg);
+                @include br_mr(4px);
+            }
+        }
+        >div:nth-child(2){
+            >div:nth-child(1){
+                background-image: url(../images/7_photos/mini_mask.png), url(../images/7_photos/4.svg);
+                @include br_mr(4px);
+            }
+            >div:nth-child(2){
+                background-image: url(../images/7_photos/long_mask.png), url(../images/7_photos/5.svg);
+                @include br_mr(4px);
+            }
+        }
+        >div:nth-child(3){
+            >div:nth-child(1){
+                background-image: url(../images/7_photos/long_mask.png), url(../images/7_photos/6.svg);
+                @include br_mr(4px);
+            }
+            >div:nth-child(2){
+                background-image: url(../images/7_photos/mini_mask.png), url(../images/7_photos/7.svg);
+                @include br_mr(4px);
+            }
+        }
+    }
+}
+.grate{
+    margin-top: 75px;
+    text-align: center;
+    p{
+        @include f_roboto_300(18px, 14px);
+        color: $color_gray_6;
+    }
+    form input, form button{
+        margin-top: 25px;
+        height: 40px;
+        vertical-align: middle;
+    }
+    form input{
+        @include f_roboto_300(14px, 16px);
+        padding-left: 15px;
+        color: #999999;
+        width: 299px;
+        border: 1px solid #D4D4D4;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+        border-radius: 3px;
+    }
+    form button{
+        @include red_button(40px);
+        background: #FF4E50;
+        color: #FFFFFF;
+    }
+}

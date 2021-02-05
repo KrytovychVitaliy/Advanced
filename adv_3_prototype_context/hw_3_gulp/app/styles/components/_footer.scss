@@ -1,0 +1,28 @@
+footer{
+    margin: 0 auto;
+    border-top: 3px solid $color_bg_base;
+    padding-top: 38px;
+    margin-top: 100px;
+    margin-bottom: 36px;
+
+    section{
+        margin: 0 auto;
+        &>div:nth-child(1){
+            @include f_montserrat_normal(16px, 20px);
+            color: $color_bg_base;
+        };
+        &>div:nth-child(2)>p, &>div:nth-child(3)>p{
+            @include f_montserrat_bold(14px, 17px);
+            color: $color_gray_4;
+            text-align: start;
+        };
+        li{
+            @include f_roboto_300(14px, 26px);
+            color: $color_gray_9;
+            text-align: start;
+        };
+        img:last-child{
+            margin-top: 7px;
+        }
+    }
+}

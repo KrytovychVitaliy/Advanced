@@ -1,0 +1,45 @@
+@mixin f_montserrat_normal($fs, $lh){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fs;
+    line-height: $lh;
+}
+@mixin f_montserrat_bold($fs, $lh){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $fs;
+    line-height: $lh;
+}
+@mixin f_montserrat_bolder($fs, $lh){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: $fs;
+    line-height: $lh;
+}
+@mixin f_roboto_300($fs, $lh){
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: $fs;
+    line-height: $lh;
+}
+@mixin red_button($br){
+    @include f_montserrat_bold(14px, 17px);
+    padding: 12px 20px;
+    border: 1px solid $color_bg_base;
+    border-radius: $br;
+    background: $color_bg_base;
+    color: $colorBase;
+}
+@mixin br_mr($br){
+    border-radius: $br;
+    margin: 0 10px 20px 10px;
+}
+
+
+
+
+

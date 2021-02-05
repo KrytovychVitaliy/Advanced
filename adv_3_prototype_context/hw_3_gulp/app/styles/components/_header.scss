@@ -1,0 +1,51 @@
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+header{
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 224px;
+    background-image: url(../images/header.svg), url(../images/header_mask.svg);
+    background-size: cover, cover;
+    background-position: center, bottom;
+    background-repeat: no-repeat;
+    color: $colorBase;
+    text-align: center;
+    menu{
+        height: 36px;
+        >li{
+            list-style-type: none;
+            @include f_montserrat_bold(20px, 24px);
+            line-height: 36px;
+
+        }
+        ul{
+            width: 152px;
+            @include f_montserrat_normal(14px, 17px);
+            li:first-child{
+                width: 44px;
+            }
+            li:last-child{
+                width: 90px;
+                height: 36px;
+                padding-top: 9px;
+                border: 2px solid $colorBase;
+                border-radius: 40px;
+            }
+        }
+    }
+    h1{
+        margin-top: 147.5px;
+        @include f_montserrat_bold(52px, 63px);
+    }
+    p{
+        margin-top: 28.5px;
+        color: $color_white_sp;
+        @include f_roboto_300(24px, 24px);
+    }
+    button{
+        @include red_button(40px);
+        margin-top: 33px;
+    }
+}

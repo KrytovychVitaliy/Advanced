@@ -1,0 +1,228 @@
+@media (max-width: 1100px){
+        .photos-7 .photos-7-size-long{
+            width: 580px;
+        }
+        .photos-7 .photos-7-size-mini{
+            width: 280px;
+        }
+        .avatar{
+            max-width: 700px;
+        }
+}
+@media (max-width: 950px){
+    h2{
+        font-size: 22px;
+        line-height: 27px;
+    }
+    header{
+        max-height: 550px;
+    }
+    header menu{
+        padding-right: 50px;
+    }
+    .photos-3{
+        h2{margin-bottom: 5px;}
+        h3{line-height: 14px;}
+        section{
+            flex-direction: column !important;
+            &>div{
+            padding: 0 20px 16px 20px;
+            height: 240px;
+            margin: 10px 0 0;
+            padding-right: 30px;
+            }
+        }
+    }
+    .photos-7 div.photos-7-size-long, .photos-7 div.photos-7-size-mini{
+        width: 300px;
+        height: 120px;
+        background-size: 300px 120px;
+    }
+    .photos-7 .photos-7__photo{
+        align-items: center;
+        &>div{
+            flex-direction: column !important;
+            align-items: center;
+            &>div{
+                margin: 0 0 10px 0;
+            }
+        }
+        >div:nth-child(1){
+            >div:nth-child(1){
+                background-image: url(../images/mini_7_photos/mask.png), url(../images/mini_7_photos/1.svg);
+            }
+            >div:nth-child(2){
+                background-image: url(../images/mini_7_photos/mask.png), url(../images/mini_7_photos/2.svg);
+            }
+            >div:nth-child(3){
+                background-image: url(../images/mini_7_photos/mask.png), url(../images/mini_7_photos/3.svg);
+            }
+        }
+        >div:nth-child(2){
+            >div:nth-child(1){
+                background-image: url(../images/mini_7_photos/mask.png), url(../images/mini_7_photos/4.svg);
+            }
+            >div:nth-child(2){
+                background-image: url(../images/mini_7_photos/mask.png), url(../images/mini_7_photos/5.svg);
+            }
+        }
+        >div:nth-child(3){
+            >div:nth-child(1){
+                background-image: url(../images/mini_7_photos/mask.png), url(../images/mini_7_photos/6.svg);
+            }
+            >div:nth-child(2){
+                background-image: url(../images/mini_7_photos/mask.png), url(../images/mini_7_photos/7.svg);
+            }
+        }
+    }
+    footer{
+        margin-bottom: 20px;
+        section{
+            div{
+                width: 200px !important;
+                padding-left: 10px;
+            }
+            li:first-child{
+                position: relative;
+                &:before{
+                    display: block;
+                    position: absolute;
+                    content:'About';
+                    background: #FFFFFF;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 769px){
+    body{
+        footer{
+            margin-top: 40px;
+            padding-top: 19px;
+            section{
+                >div:nth-child(2){
+                    padding: 13px 0 0;
+                    &>p{
+                        text-align: center;
+                    }
+                    ul{
+                        li{margin-right: 12px;};
+                        li:nth-child(4), li:nth-child(6){margin-right: 0;};
+                        li:first-child{
+                            width: 35px;
+                        }
+                    }
+                };
+                >div:nth-child(3)>p{
+                    text-align: center;
+                    padding: 6px 0 0;
+                }
+                >div:nth-child(4){
+                    align-items: center !important;
+                    padding: 14px 0 0;
+                }    
+            }
+        }
+    }
+}
+@media (max-width: 650px){
+    h1{
+        font-size: 30px;
+        line-height: 37px;
+    }
+    h2{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    header{
+        padding-top: 20px;
+        height: 460px;
+        h1{
+            font-size: 30px;
+            line-height: 37px;
+            padding: 0;
+        }
+        >p{
+            font-size: 18px;
+            line-height: 24px;
+            margin-top: 5.5px;
+            padding: 0;
+        }
+        button{
+            margin-top: 15px;
+        }
+        menu{
+            padding: 0;
+            display: flex;
+            flex-direction: column !important;
+            align-items: center !important;
+            >li{
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+@media (max-width: 575px){
+    header{
+        padding-bottom: 153px;
+        menu{
+            >li{
+                margin-top: 97px;
+            }
+        }
+    }
+}
+@media (max-width: 400px){
+    .big-button{
+        width: 280px;
+        height: 40px;
+    }
+    h2{
+        margin: 0;
+    }
+    .photos-3{
+        margin-top: 34px;
+    }
+    .avatar{
+        margin-top: 36px;
+        figure,
+        & figure:nth-child(3),
+        & figure:nth-child(4){
+            margin: 16px 0 0 0;
+        }
+    }
+    .photos-7{
+        margin-top: 0px;
+        h2{
+            margin: 35px 20px 33px 20px;
+        }
+    }
+    .grate{
+        margin-top: 35px;
+        form{
+            p{margin-top: 9px;}
+            input{
+                margin: 15px 0 0 0;
+                width: 280px;
+                height: 40px;
+            }
+            button{
+                margin-top: 10px;
+            }
+        }
+    }
+    footer{
+        margin-left: 0 !important;
+        margin-right: 0  !important;
+        section{
+            >div{
+                padding-left: 0;
+                padding-right: 0; 
+            }  
+        }
+    }
+}
