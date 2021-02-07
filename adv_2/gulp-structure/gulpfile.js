@@ -55,6 +55,13 @@ function styles (){
                 .pipe(browser.stream())
 }
 
+function images() {
+    return gulp.src(paths.images.src)
+        .pipe(image())
+        .pipe(gulp.dest(paths.images.dest))
+        .pipe(browser.stream())
+}
+
 function html (){
     return gulp.src(paths.html.src)
                 .pipe(gulp.dest(paths.html.dest))
@@ -67,7 +74,7 @@ function watch(){
     gulp.watch('app/index.html', gulp.series(browserSyncReload))
 }
 
-const build = gulp.parallel(styles, html)
+const build = gulp.parallel(styles, html, images)
 
 gulp.task('build',  build)
 
