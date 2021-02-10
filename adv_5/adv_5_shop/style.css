@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+#div_data>p:first-child{
+    font-size: 16px;
+}
+#div_data, #div_num, #output_data{
+    padding: 30px 30px 50px;
+    margin: 50px 10px;
+    width: 250px;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(230, 230, 230);
+}
+#div_data>div, #add_goods{
+    width: 190px;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(220, 220, 220);
+    padding: 10px;
+}
+#add_goods{
+    min-height: 80px;
+}
+#div_data>p, #input_num>p, #div_num>p{
+    margin-top: 20px;
+    font-weight: bold;
+}
+#div_num>input{
+    padding-left: 10px;
+    line-height: 20px;
+}
+#div_num>div, #input_num>input{
+    margin-top: 20px;
+}
+#radio_change>p{
+    margin: 10px 0;
+}
+#radio_change>input{
+    margin-left: 10px;
+    cursor: pointer;
+}
+#radio_change>label{
+    cursor: pointer;
+}
+
+.button{
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(220, 220, 220);
+}
+.button:hover{
+    border: 1px solid rgb(46, 129, 206);
+}
