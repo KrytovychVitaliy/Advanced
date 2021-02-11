@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adv_6_localStorage</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+    <div id="form_input">
+        <h1>Please sign up</h1>
+        <form name="input" id="input">
+            <div class="div_input">
+                <p>First name</p>
+                <input type="text" id="input_first_name">
+                <p class="p_X hidden">X</p>
+                <p class="p_V hidden">V</p>
+                <p class="hidden p_hidden"><span>Please provide a valid First name</span></p>
+            </div>
+            <div class="div_input">
+                <p>Last name</p>
+                <input type="text" id="input_last_name">
+                <p class="p_X hidden">X</p>
+                <p class="p_V hidden">V</p>
+                <p class="hidden p_hidden"><span>Please provide a valid Last name</span></p>
+            </div>
+            <div class="div_input">
+                <p>Email address</p>
+                <input type="text" id="input_email">
+                <p class="p_X hidden">X</p>
+                <p class="p_V hidden">V</p>
+                <p class="hidden p_hidden"><span id="span_email">Please provide a valid Email address</span></p>
+            </div>
+            <div class="div_input">
+                <p>Password</p>
+                <input type="text" id="input_password">
+                <p class="p_X hidden">X</p>
+                <p class="p_V hidden">V</p>
+                <p class="hidden p_hidden"><span>Please provide a valid Password = 3-15 letters</span></p>
+            </div>
+            <button id="input_submit">Sing Up</button>
+        </form>
+        <p class="p_sign" id="signIn">Sign In now</p>
+    </div>
+    <div id="form_signIn">
+        <h1>Please sign in</h1>
+        <form name="signIn" id="signIn">
+            <div class="div_input">
+                <p>Email address</p>
+                <input type="text" id="signIn_email">
+                <p class="p_X hidden">X</p>
+                <p class="p_V hidden">V</p>
+                <p class="hidden p_hidden"><span>Incorrect email address</span></p>
+            </div>
+            <div class="div_input">
+                <p>Password</p>
+                <input type="text" id="signIn_password">
+                <p class="p_X hidden">X</p>
+                <p class="p_V hidden">V</p>
+                <p class="hidden p_hidden"><span>Incorrect password</span></p>
+            </div>
+            <button id="signIn_submit">Sing In</button>
+        </form>
+        <p class="p_sign" id="signUp">Sign Up now</p>
+    </div>
+    <div id="div_acc">
+        <div class="div-acc__header"></div>
+        <div class="div-acc__icons"><img src="man.svg" alt="account"></div>
+        <div class="div-acc__data">
+            <p class="div-acc__data-name"><span class="div-acc__data-firstName"></span><span class="div-acc__data-secondName"></span></p>
+            <p class="div-acc__data-emailAddress"></p>
+            <p class="div-acc__data-position"></p>
+        </div>
+        <div class="div-acc__footer">Sing Up</div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
