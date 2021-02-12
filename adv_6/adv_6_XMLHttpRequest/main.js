@@ -64,7 +64,7 @@ function detailsClick(event) { //карточка одного фільму = д
                             <div class="div_container">
                                 <div class="div_container2">
                                     <div class="div_left">
-                                        <img class="poster_element" src=${a.Poster ? a.Poster : ''}>
+                                        <img class="poster_element" src=${a.Poster.includes('http') ? a.Poster : ''}>
                                     </div>
                                     <div class="div_right">
                                         <div class="title_element"><h1>${a.Title ? a.Title : ''}</h1></div>
