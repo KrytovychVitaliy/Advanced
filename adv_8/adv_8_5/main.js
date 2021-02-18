@@ -20,7 +20,6 @@ function clearString(str) {
     return clearArr;
 }
 ;
-clearString(document.getElementById('bad_words').textContent);
 const badArr = ['java', 'tottenham']; //початкові значення bad_words
 function printSpan(arg) {
     let span = document.getElementById('bad_words');

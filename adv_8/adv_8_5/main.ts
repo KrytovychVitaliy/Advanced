@@ -17,7 +17,6 @@ function clearString(str: string): Array<string>{
     });
     return clearArr;
 };
-clearString(document.getElementById('bad_words').textContent);
 
 
 const badArr: Array<string> = ['java', 'tottenham']; //початкові значення bad_words
