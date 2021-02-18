@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+header{
+    padding: 20px 0;
+}
+input, #get, section > div{
+    width: 340px;
+    height: 30px;
+    line-height: 30px;
+}
+input::placeholder{
+    color: rgb(128, 128, 128);
+}
+#get, section > div{
+    display: inline-block;
+    background-color: rgb(16, 175, 50);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 880px;
+    margin-top: 60px;
+}
+.element{
+    width: 200px;
+    border: 1px solid rgb(200, 200, 200);
+    margin-bottom: 30px;
+    box-shadow: 0 0 0 2px rgba(200, 200, 200, 0.3);
+}
+.element img{
+    width: 200px;
+    height: 300px;
+}
+.element .title{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.element .type, .element .year, .element .details{
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    color: rgb(100, 100, 100);
+    font-size: 12px;
+}
+.element .details{
+    background-color: rgb(16, 175, 50);
+    color: white;
+    cursor: pointer;
+}
+#x{
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    margin-left: 315px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.background_container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.5);
+    z-index: 10;
+}
+.div_container{
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    font-size: 12px;
+    padding: 10px;
+    box-shadow: inset 0 0 0 1px rgba(200, 200, 200, 0.7);
+}
+.div_container2{
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px;
+    display: flex;
+}
+.div_left{
+    padding-right: 10px;
+}
+.div_left img{
+    width: 300px;
+    height: 400px;
+}
+.title_element{
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+    line-height: 30px;
+}
+.div_right span{
+    font-weight: bolder;
+}
+.div_right div{
+    padding: 5px 0;
+}
+.div_right div:nth-child(2){
+    font-size: 10px;
+    color: rgb(100, 100, 100);
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section > div{
+    margin: 5px;
+    width: 180px;
+}
+section input, select{
+    font-size: 12px;
+    width: 70px;
+    height: 20px;
+}
