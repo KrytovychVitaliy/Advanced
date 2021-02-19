@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adv_7_XMLHttpRequest</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <form name="form_film">
+            <div>
+                <span id="x" onclick="xClick()">x</span>
+                <input type="text" id="input_text" placeholder="Write movie name">
+            </div>
+            <div>
+                <span>Year: </span>
+                <input type="text" id="input_year">
+            </div>
+            <div>
+                <span>Type: </span>
+                <select size="1" id="input_type">
+                    <option selected value="" disabled>Type</option>
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episode</option>
+                </select>
+            </div>
+            <div>
+                <span>Plot: </span>
+                <select size="1" id="input_plot">
+                    <option selected value="short">Short</option>
+                    <option value="full">Full</option>
+                </select>
+            </div>
+            <div>
+                <span>Response: </span>
+                <select size="1" id="input_response">
+                    <option selected value="json">JSON</option>
+                    <option value="xml">XML</option>
+                </select>
+            </div>
+            <div>
+                <span>Page: </span>
+                <input type="text" id="input_page">
+            </div>
+            <button id="get">search</button>
+        </form>
+    </header>
+    <main id="message"></main>
+    <script src="./main.js"></script>
+</body>
+</html>
